@@ -1,0 +1,138 @@
+.react-excel .active-sheet {
+  background-color: #a1d6e2;
+  color: rgb(65,65,65);
+}
+
+.react-excel div{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.react-excel div button{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  color: rgb(86,86,231);
+  cursor: pointer;
+  font-size: larger;
+}
+
+.react-excel table{
+  margin: 2rem auto;
+  border-collapse: collapse;
+}
+.react-excel th, .react-excel td{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+
+.react-excel table tr:nth-child(even){
+  background-color: #e6d8d8;
+}
+
+.custom-button{
+  display: table;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  background-color: #1995ad;
+  color: beige;
+  font-size: large;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.custom-sheet {
+  box-sizing: border-box;
+  border-color: #1995ad;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.data-grid .data-header > div {
+  width: 100%;
+}
+
+.data-grid .data-header > div:after, .data-grid .data-body .data-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.data-grid .data-header > div > div {
+  float: left;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 2px;
+}
+
+.data-grid .data-header > div > div.action-cell, 
+.data-grid .data-header > tr > .action-cell, 
+.data-grid .data-body .data-row > div.action-cell {
+  width: 10%;
+}
+
+.data-grid .data-body .data-row > div {
+  float: left;
+  font-size: 12px;
+}
+
+.data-grid .data-body .data-row > .cell > input.data-editor {
+  width: 100%;
+  height: 100%;
+}
+
+.data-grid ul.data-body {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.text-area{
+  display: block;
+  margin: 2rem auto;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
